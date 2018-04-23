@@ -1,0 +1,272 @@
+﻿@model FunealParlourApp.Models.Member
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Member</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ParentMemberID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParentMemberID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SocietyGroupID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SocietyGroupID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PolicyNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PolicyNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Initials)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Initials)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IDNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassportNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassportNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSACitizen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSACitizen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsEmployed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsEmployed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployerContactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployerContactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelephoneHome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelephoneHome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherContactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherContactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsChroniclLLness)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsChroniclLLness)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChronicILLnessDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChronicILLnessDetails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HasDebts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HasDebts)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DebtsDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DebtsDetails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateModified)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateModified)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserModified)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserModified)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
