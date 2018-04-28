@@ -1,213 +1,203 @@
 ﻿@model IEnumerable<FunealParlourApp.Models.Member>
 
-@{
-    ViewBag.Title = "Index";
-}
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Members</h4>
+            <p>
+                @Html.ActionLink("Create New", "Create")
+            </p>
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PolicyNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Initials)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FullName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Surname)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Age)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DateOfBirth)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IDNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PassportNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Gender)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IsSACitizen)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Country)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IsEmployed)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Employer)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EmployerContactNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ContactNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TelephoneHome)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OtherContactNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EmailAddress)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IsChroniclLLness)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ChronicILLnessDetails)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.HasDebts)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DebtsDetails)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Active)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DateCreated)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DateModified)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UserCreated)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UserModified)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UserID)
+                    </th>
+                    <th></th>
+                </tr>
 
-<h2>Index</h2>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PolicyNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Initials)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FullName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Surname)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Age)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateOfBirth)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IDNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PassportNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Gender)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IsSACitizen)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Country)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IsEmployed)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Employer)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmployerContactNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ContactNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TelephoneHome)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OtherContactNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmailAddress)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IsChroniclLLness)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChronicILLnessDetails)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HasDebts)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DebtsDetails)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Active)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateCreated)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateModified)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserCreated)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserModified)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserID)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.MemberID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.MemberID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.MemberID })
+                        </td>
+                    </tr>
+                }
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ParentMemberID)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SocietyGroupID)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PolicyNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Initials)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FullName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Surname)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Age)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DateOfBirth)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IDNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PassportNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Gender)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IsSACitizen)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Country)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IsEmployed)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Employer)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EmployerContactNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ContactNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TelephoneHome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OtherContactNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EmailAddress)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IsChroniclLLness)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ChronicILLnessDetails)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.HasDebts)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DebtsDetails)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Active)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DateCreated)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DateModified)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UserCreated)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UserModified)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UserID)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ParentMemberID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SocietyGroupID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PolicyNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Initials)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FullName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Surname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Age)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateOfBirth)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IDNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PassportNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Gender)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IsSACitizen)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Country)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IsEmployed)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Employer)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmployerContactNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ContactNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TelephoneHome)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OtherContactNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmailAddress)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IsChroniclLLness)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ChronicILLnessDetails)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HasDebts)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DebtsDetails)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Active)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateCreated)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateModified)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UserCreated)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UserModified)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UserID)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MemberID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MemberID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MemberID })
-        </td>
-    </tr>
-}
-
-</table>
+            </table>
+        </div>
+    </div>
+</div>
